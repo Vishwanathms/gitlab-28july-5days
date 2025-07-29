@@ -48,7 +48,7 @@ Replace `http://private_server_ip` with your actual domain or public IP:
 
 ```bash
 sudo EXTERNAL_URL="http://private_server_ip" apt install gitlab-ce
-sudo EXTERNAL_URL="192.168.163.128" apt install gitlab-ce
+sudo EXTERNAL_URL="http://192.168.163.128" apt install gitlab-ce
 ```
 
 > If you're using HTTPS, use `https://gitlab.example.com` and ensure certs are ready (or use Let's Encrypt).
