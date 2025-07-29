@@ -48,6 +48,7 @@ Replace `http://private_server_ip` with your actual domain or public IP:
 
 ```bash
 sudo EXTERNAL_URL="http://private_server_ip" apt install gitlab-ce
+sudo EXTERNAL_URL="192.168.163.128" apt install gitlab-ce
 ```
 
 > If you're using HTTPS, use `https://gitlab.example.com` and ensure certs are ready (or use Let's Encrypt).
@@ -69,7 +70,7 @@ sudo gitlab-ctl reconfigure
 * Open your browser:
 
   ```
-  http://<private_server_ip> 
+  http://192.168.163.128 
   ```
 * You'll be prompted to set the **admin root password** on first login.
 
@@ -93,7 +94,7 @@ sudo nano /etc/gitlab/gitlab.rb
 Add or modify:
 
 ```ruby
-external_url 'https://private_server_ip'
+external_url 'https://192.168.163.128'
 letsencrypt['enable'] = true
 letsencrypt['contact_emails'] = ['you@example.com'] 
 ```
