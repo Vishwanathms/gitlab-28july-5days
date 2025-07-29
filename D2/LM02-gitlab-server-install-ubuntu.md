@@ -35,7 +35,7 @@ sudo apt install -y postfix
 ## 🔧 Step 3: Add GitLab Repository
 
 ```bash
-curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash
+curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | sudo bash
 ```
 
 > ⚠️ Use `gitlab-ce` in the next step if you want the free **Community Edition** instead of Enterprise.
