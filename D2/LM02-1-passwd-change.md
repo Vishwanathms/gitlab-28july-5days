@@ -1,7 +1,3 @@
-To **change the GitLab root password**, follow the method that applies to your situation:
-
----
-
 ### ✅ Method 1: Using Rails Console (Recommended if GitLab is installed)
 
 Run these commands:
@@ -53,4 +49,3 @@ If not, use the Rails console method above.
 sudo gitlab-ctl restart
 ```
 
-Let me know if the GitLab UI is not accessible, and I can help with password reset via terminal only.
