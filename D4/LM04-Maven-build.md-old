@@ -1,0 +1,19 @@
+```
+
+stages:
+  - build
+
+build:
+  stage: build
+  script:
+    - apt-get update && apt-get install -y maven
+    # Clone the GitHub repository
+    - git clone https://github.com/Vishwanathms/SampleMaven.git
+    - cd SampleMaven
+    # Build with Maven
+    - mvn clean package
+  artifacts:
+    paths:
+      - SampleMaven/target/*.jar
+    expire_in: 1 day
+```
