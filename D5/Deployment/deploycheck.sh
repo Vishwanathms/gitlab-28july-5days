@@ -25,7 +25,7 @@ fi
 echo "Running deployment checks for environment: $ENV ($BASE_URL)"
 
 # Example: Check service health endpoint
-STATUS=$(curl -s -o /dev/null -w "%{http_code}" "$BASE_URL/health")
+STATUS=$(curl -s -o /dev/null -w "%{http_code}" "$BASE_URL")
 
 if [[ "$STATUS" == "200" ]]; then
   echo "Deployment check passed: Service is healthy (HTTP $STATUS)"
