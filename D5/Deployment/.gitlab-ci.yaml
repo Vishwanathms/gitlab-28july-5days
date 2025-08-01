@@ -11,3 +11,7 @@ deploy:
       - ENV: dev
       - ENV: staging
       - ENV: prod
+include:
+  - project: 'template_proj/ci-templates'
+    file: '/.common-variables.yml'
+    ref: main

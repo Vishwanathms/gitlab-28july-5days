@@ -14,7 +14,7 @@ fi
 if [[ "$ENV" == "prod" ]]; then
   BASE_URL="https://google.com"
 elif [[ "$ENV" == "staging" ]]; then
-  BASE_URL="https://yahoo.com"
+  BASE_URL="https://yahoomail.com"
 elif [[ "$ENV" == "dev" ]]; then
   BASE_URL="https://rediffmail.com"
 else
