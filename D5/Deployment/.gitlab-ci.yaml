@@ -3,7 +3,9 @@ stages:
 
 deploy:
   stage: deploy
-  script: deploycheck.sh $ENV
+  script:
+    - chmod +x deploycheck.sh 
+    - ./deploycheck.sh $ENV
   parallel:
     matrix:
       - ENV: dev

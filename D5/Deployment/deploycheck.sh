@@ -11,10 +11,12 @@ if [[ -z "$ENV" ]]; then
 fi
 
 # Define environment-specific variables
-if [[ "$ENV" == "production" ]]; then
-  BASE_URL="https://your-production-domain.com"
+if [[ "$ENV" == "prod" ]]; then
+  BASE_URL="https://google.com"
 elif [[ "$ENV" == "staging" ]]; then
-  BASE_URL="https://your-staging-domain.com"
+  BASE_URL="https://yahoo.com"
+elif [[ "$ENV" == "dev" ]]; then
+  BASE_URL="https://rediffmail.com"
 else
   echo "Unknown environment: $ENV"
   exit 2
