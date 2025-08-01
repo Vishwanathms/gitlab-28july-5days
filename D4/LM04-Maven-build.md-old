@@ -1,3 +1,4 @@
+Only maven build example 
 ```
 
 image: maven:3.8.6-openjdk-17

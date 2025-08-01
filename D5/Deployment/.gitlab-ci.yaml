@@ -1,0 +1,11 @@
+stages:
+  - deploy
+
+deploy:
+  stage: deploy
+  script: deploycheck.sh $ENV
+  parallel:
+    matrix:
+      - ENV: dev
+      - ENV: staging
+      - ENV: prod
